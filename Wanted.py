@@ -4,7 +4,6 @@ from random import choice
 from threading import Thread as th
 
 l = []
-speed = 0
 attempts = 0
 rich_list = []
 
@@ -35,7 +34,6 @@ def log(text):
 def main():
 	global attempts
 	attempts_str = ''
-	speed_last = 0
 	while True:
 			key = gen_key()
 			addr = get_addr(key).lower()
